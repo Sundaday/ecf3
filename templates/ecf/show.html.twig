@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<section class="vehicules">
+    {% for vehicule in vehicules %}
+        <vehicule>
+            <h2>{{vehicule.nomVehicule}}</h2>
+            <div class="metadata"></div>
+            <div class="content">
+                <img src="" alt="">
+                <a href="{{path('louer_show')}}" class="btn btn-primary"></a>
+            </div>
+        </vehicule>
+    {% endfor %}
+</section>
+
+{% endblock %}
